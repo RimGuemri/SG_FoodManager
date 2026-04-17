@@ -1,10 +1,18 @@
+using FoodManager.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+var excelPath = builder.Configuration.GetValue<string>("PizzaSettings:ExcelPath");
+
+// On dit : "Quand quelqu'un a besoin d'un IDataLoader, crée un ExcelDataLoader avec ce chemin"
+builder.Services.AddScoped<IDataLoader>(sp => new ExcelDataLoader(excelPath));
 
 var app = builder.Build();
+
+
+
+// le code ci dessous a été créé automatiquement avec la création du project par console
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

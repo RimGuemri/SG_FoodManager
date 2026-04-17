@@ -18,9 +18,4 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\FoodManager.Infrastructure\FoodManager.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\FoodManager.Domain\FoodManager.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

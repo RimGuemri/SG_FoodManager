@@ -1,10 +1,10 @@
 <Solution>
   <Project Path="FoodManager.Api/FoodManager.Api.csproj" />
+  <Project Path="FoodManager.Application.Tests/FoodManager.Application.Tests.csproj" />
   <Project Path="FoodManager.Application/FoodManager.Application.csproj" />
+  <Project Path="FoodManager.Domain.Tests/FoodManager.Domain.Tests.csproj" />
   <Project Path="FoodManager.Domain/FoodManager.Domain.csproj" />
+  <Project Path="FoodManager.Infrastructure.Tests/FoodManager.Infrastructure.Tests.csproj" />
   <Project Path="FoodManager.Infrastructure/FoodManager.Infrastructure.csproj" />
   <Project Path="FoodManager.UnitTests/FoodManager.UnitTests.csproj" />
-  <Project Path="FoodManager.UnitTests/FoodManager.Application.Tests/FoodManager.Application.Tests.csproj" />
-  <Project Path="FoodManager.UnitTests/FoodManager.Domain.Tests/FoodManager.Domain.Tests.csproj" />
-  <Project Path="FoodManager.UnitTests/FoodManager.Infrastructure.Tests/FoodManager.Infrastructure.Tests.csproj" />
 </Solution>
